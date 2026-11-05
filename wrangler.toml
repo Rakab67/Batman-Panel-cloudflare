@@ -1,0 +1,16 @@
+name = "batman"
+main = "Batman.js"
+compatibility_date = "2026-07-10"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "panel"
+database_id = "D1_DATABASE_ID"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "KV_NAMESPACE_ID"
+
+[triggers]
+crons = ["*/5 * * * *"]
